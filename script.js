@@ -1,4 +1,5 @@
 const stage = document.querySelector("#stage");
+const message = document.querySelector("#message");
 const canvas = document.querySelector("#fireworksCanvas");
 const exitButton = document.querySelector("#exitButton");
 const context = canvas.getContext("2d");
@@ -187,12 +188,14 @@ stage.addEventListener("click", (event) => {
 exitButton.addEventListener("click", () => {
   isClosed = true;
   stage.classList.add("closed");
+  message.hidden = true;
 });
 
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     isClosed = true;
     stage.classList.add("closed");
+    message.hidden = true;
   }
 });
 

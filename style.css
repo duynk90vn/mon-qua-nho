@@ -16,12 +16,16 @@ body {
   padding: 18px;
   font-family: "Segoe UI", Arial, sans-serif;
   background: radial-gradient(circle at top, #20233f, #070914 64%);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.gift-shell {
+  width: min(94vmin, 900px);
 }
 
 .stage {
   position: relative;
-  width: min(94vmin, 900px);
+  width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
   background: #050711;
@@ -45,12 +49,8 @@ canvas {
 }
 
 .message {
-  position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 58px;
+  padding: 18px 8px 0;
   text-align: center;
-  pointer-events: none;
 }
 
 h1 {
@@ -103,8 +103,7 @@ h1 span {
 }
 
 .stage.closed .portrait,
-.stage.closed canvas,
-.stage.closed .message {
+.stage.closed canvas {
   opacity: 0;
 }
 
