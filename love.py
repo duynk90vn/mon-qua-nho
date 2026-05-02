@@ -21,7 +21,7 @@ WHITE = (246, 248, 255)
 SOFT_PINK = (255, 190, 220)
 
 WISH_TEXT = "Chúc cháu luôn vui vẻ và gặp thật nhiều điều dễ thương"
-SUB_TEXT = "Một món quà nhỏ gửi đến em"
+SUB_TEXT = "Một món quà nhỏ gửi đến cháu"
 BACKGROUND_IMAGE = "HDT.png"
 EXIT_BUTTON_TEXT = "EXIT"
 
